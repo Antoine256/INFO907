@@ -1,0 +1,14 @@
+<div class="w-screen h-screen overflow-hidden flex items-center">
+  <div class="grid grid-cols-5 ">
+    <div *ngFor="let card of tenCards" class="w-full flex flex-col items-center">
+      <div class="w-1/2">
+        <img src="{{card.image}}" class="bg-green-600" alt="aaaaaaaa">
+      </div>
+      <div class="flex justify-center">
+        <div class="">
+          <p>{{card.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
