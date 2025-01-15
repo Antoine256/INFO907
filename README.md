@@ -21,7 +21,7 @@ Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
 - Strength : 0-10
 - Willpower : 1-10
 - Lore : 0-5
-- Move_Cost : 0-6
+- Move_Cost : 0-6 
 
 
 ### Arbre :
