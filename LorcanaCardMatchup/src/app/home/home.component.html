@@ -1,14 +1,22 @@
-<div class="w-screen h-screen overflow-hidden flex items-center">
-  <div class="grid grid-cols-5 ">
-    <div *ngFor="let card of tenCards" class="w-full flex flex-col items-center">
-      <div class="w-1/2">
-        <img src="{{card.image}}" class="bg-green-600" alt="aaaaaaaa">
-      </div>
-      <div class="flex justify-center">
-        <div class="">
-          <p>{{card.name}}</p>
+<div class="p-3 h-screen w-full overflow-scroll sm:overflow-hidden">
+  <app-search-bar (onCardSelected)="updateCard($event)" class=""/>
+  <div class="pt-3 h-full grid grid-cols-1 sm:grid-cols-3">
+    <div *ngIf="card" class="w-full flex flex-col items-center">
+      <h3 class="p-1 text-lg">Carte selectionnée</h3>
+      <img src="{{card.image}}" class="w-96 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+      <p>{{card.name}}</p>
+    </div>
+    <div *ngIf="remplacmentCards" class="w-full flex flex-col items-center col-span-2">
+      <h3 class="p-1 text-lg">Cartes de remplacement</h3>
+      <div class="carousel carousel-center space-x-4 ">
+        <div *ngFor="card of remplacmentCards; let index = index; " id="item-{{index}}" class="carousel-item">
+          <div>
+            <img src="{{card.image}}" class="w-96 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+            <p class="text-center">{{card.name}}</p>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
