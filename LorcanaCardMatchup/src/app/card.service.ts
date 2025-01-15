@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Card} from "../interfaces/Card";
+import {elementAt} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -12,30 +13,42 @@ export class CardService {
   }
 
   //récupère les 5 cartes les plus similaires à notre carte.
-  GetFiveCards(card: Card): Card[] {
+  getFiveCards(card: Card, deep: number = 0): Card[] {
     const cardPath = this.getPath(card.name)
-    console.log(cardPath)
-    let level: any = this.cardsOntologie;
     let result: any[] = [];
-    console.log(this.getCards(level))
+    let level: any = this.cardsOntologie
+
+    for(let i = 0; i < cardPath.length - deep; i++){
+      level = level[cardPath[i]]
+    }
+    result = this.getCards(level)
+
+    console.log(result)
+    if(result.length === 5)
+      return result
     return result
   }
 
-  getCards(level: any): Response{
-    if (Array.isArray(level)){
-      return {res: true,path: level};
+  getCardss(level: any): string[]{
+    if(Array.isArray(level)) {
+      return level
     }
-    let thisRes: Response = {res: false,path: []};
+    let thisRes: string[] = []
+    const keys = Object.keys(level)
+    for(let i = 0; i < keys.length; i++){
+      thisRes.concat(this.getCardss(level[keys[i]]))
+    }
+    return thisRes
+  }
+
+  getCards(level: any): string[]{
+    console.log(level)
+    if (Array.isArray(level)){
+      return level;
+    }
+    let thisRes:string[] = [];
     for (let i=0; i < Object.keys(level).length; i++){
-      let response: Response = this.getCards(level[Object.keys(level)[i]]);
-      if (response.res){
-        const name: string = Object.keys(level)[i]!
-        response.path = response.path.concat(name)
-        response.res = false
-        thisRes = response;
-      }else{
-        thisRes = {res: false,path: []};
-      }
+      thisRes.push(...this.getCards(level[Object.keys(level)[i]]));
     }
     return thisRes;
   }

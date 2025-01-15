@@ -26,7 +26,7 @@ export class HomeComponent {
   updateCard(card: Card): void {
     this.card = card
     this.remplacmentCards = [card, card, card, card, card]
-    this.cardService.GetFiveCards(card)
+    this.cardService.getFiveCards(card)
   }
 
 }
