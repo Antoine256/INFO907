@@ -9,14 +9,13 @@
     <div *ngIf="remplacmentCards" class="w-full flex flex-col items-center col-span-2">
       <h3 class="p-1 text-lg">Cartes de remplacement</h3>
       <div class="carousel carousel-center space-x-4 ">
-        <div *ngFor="card of remplacmentCards; let index = index; " id="item-{{index}}" class="carousel-item">
+        <div *ngFor="let card of remplacmentCards; let index = index; " id="item-{{index}}" class="carousel-item">
           <div>
             <img src="{{card.image}}" class="w-96 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
             <p class="text-center">{{card.name}}</p>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

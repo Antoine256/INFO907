@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {Card} from "../../interfaces/Card";
-import {NgForOf, NgIf} from "@angular/common";
+import {CommonModule, NgFor, NgForOf, NgIf} from "@angular/common";
 import {SearchBarComponent} from "../search-bar/search-bar.component";
+import {CardService} from "../card.service";
 
 @Component({
   selector: 'app-home',
@@ -19,8 +20,13 @@ export class HomeComponent {
   card!: Card;
   remplacmentCards!: Card[];
 
+  constructor(private cardService: CardService) {
+  }
+
   updateCard(card: Card): void {
     this.card = card
     this.remplacmentCards = [card, card, card, card, card]
+    this.cardService.GetFiveCards(card)
   }
+
 }
