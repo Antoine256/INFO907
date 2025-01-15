@@ -25,8 +25,8 @@ export class HomeComponent {
 
   updateCard(card: Card): void {
     this.card = card
-    this.remplacmentCards = [card, card, card, card, card]
-    this.cardService.getFiveCards(card)
+    this.remplacmentCards = this.cardService.getSimilarCard(card)
+    console.log(this.remplacmentCards)
   }
 
 }

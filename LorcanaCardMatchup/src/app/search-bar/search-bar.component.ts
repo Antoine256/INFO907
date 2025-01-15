@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Card} from "../../interfaces/Card";
-import cards from "../../data/cards";
+import CARDS from "../../data/cards";
 import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
@@ -21,7 +21,7 @@ export class SearchBarComponent implements OnInit{
   hideResults: boolean = true;
 
   ngOnInit() {
-    this.cards = cards;
+    this.cards = CARDS;
   }
 
   searchCards(name: string): Card[] {

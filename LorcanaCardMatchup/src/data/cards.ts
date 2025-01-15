@@ -1,6 +1,6 @@
 import {Card} from "../interfaces/Card";
 
-let cards: Card[]  = [
+let CARDS: Card[]  = [
   {
     "artist": "Omar Lozano",
     "set_name": "Azurite Sea",
@@ -30030,4 +30030,4 @@ let cards: Card[]  = [
   }
 ]
 
-export default cards
+export default CARDS

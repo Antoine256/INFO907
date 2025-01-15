@@ -1,24 +1,28 @@
 import {Injectable} from '@angular/core';
 import {Card} from "../interfaces/Card";
 import {elementAt} from "rxjs";
+import CARDS from "../data/cards";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardService {
   cardsOntologie!: any;
+  cardsDatas!: Card[];
 
   constructor() {
     this.fetchJSONData();
+    this.cardsDatas = CARDS
   }
 
-  getSimilarCard(card: Card){
-
+  getSimilarCard(card: Card): Card[]{
+    const cardPath = this.getPath(card.name)
+    const cards = this.getXCards(card.name, cardPath, 5)
+    return cards.map(similarCard => CARDS.find(c => c.name === similarCard)!)
   }
 
   //récupère les 5 cartes les plus similaires à notre carte.
-  getXCards(card: Card, x: number, deep: number = 0): Card[] {
-    const cardPath = this.getPath(card.name)
+  getXCards(cardName: string, cardPath: string[], x: number, deep: number = 0): string[] {
     let result: any[] = [];
     let level: any = this.cardsOntologie
 
@@ -26,15 +30,14 @@ export class CardService {
       level = level[cardPath[i]]
     }
     result = this.getCards(level)
+    result = result.filter(card => card !== cardName)
 
-    console.log(result)
     if(result.length >= x)
-      return result
-    return this.getXCards(card, x, deep + 1)
+      return result.slice(0, 5)
+    return this.getXCards(cardName, cardPath, x, deep + 1)
   }
 
   getCards(level: any): string[]{
-    console.log("level", level)
     if (Array.isArray(level)){
       return level;
     }
