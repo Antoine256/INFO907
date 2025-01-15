@@ -12,8 +12,12 @@ export class CardService {
     this.fetchJSONData();
   }
 
+  getSimilarCard(card: Card){
+
+  }
+
   //récupère les 5 cartes les plus similaires à notre carte.
-  getFiveCards(card: Card, deep: number = 0): Card[] {
+  getXCards(card: Card, x: number, deep: number = 0): Card[] {
     const cardPath = this.getPath(card.name)
     let result: any[] = [];
     let level: any = this.cardsOntologie
@@ -24,25 +28,13 @@ export class CardService {
     result = this.getCards(level)
 
     console.log(result)
-    if(result.length === 5)
+    if(result.length >= x)
       return result
-    return result
-  }
-
-  getCardss(level: any): string[]{
-    if(Array.isArray(level)) {
-      return level
-    }
-    let thisRes: string[] = []
-    const keys = Object.keys(level)
-    for(let i = 0; i < keys.length; i++){
-      thisRes.concat(this.getCardss(level[keys[i]]))
-    }
-    return thisRes
+    return this.getXCards(card, x, deep + 1)
   }
 
   getCards(level: any): string[]{
-    console.log(level)
+    console.log("level", level)
     if (Array.isArray(level)){
       return level;
     }
