@@ -1,27 +1,26 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Card} from "../../interfaces/Card";
-import cards from "../../data/cards";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
+import {SearchBarComponent} from "../search-bar/search-bar.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
+    SearchBarComponent,
+    NgIf,
     NgForOf
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  cards : Card[]= [];
-  tenCards: Card[] = [];
+  card!: Card;
+  remplacmentCards!: Card[];
 
-  ngOnInit() {
-    console.log('HomeComponent initialized');
-    this.cards = cards;
-    this.tenCards = this.cards.slice(0, 10);
+  updateCard(card: Card): void {
+    this.card = card
+    this.remplacmentCards = [card, card, card, card, card]
   }
-
-
 }
