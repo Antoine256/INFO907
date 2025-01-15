@@ -14,21 +14,31 @@ fs.readFile('output.json', 'utf8', (err, data) => {
     jsonData.forEach((element) => {
         let path = [];
         if (element.type === "Character"){
-            path = [element.color, element.inkable, element.cost, element.type]
+            path = [element.color.toLowerCase()];
+            if (element.inkable){
+                path.push('inkable');
+            }else{
+                path.push('not inkable');
+            }
+            path.push(...["cost_"+element.cost.toString(), element.type.toLowerCase()]);
             if (element.abilities){
                 element.abilities.split(',').forEach((ability) => {
-                    if (ability.trim() !== "") path.push(ability.trim());
+                    if (ability.trim() !== "") path.push(ability.trim().toLowerCase());
                 })
             }
             if (element.classifications){
                 element.classifications.split(',').forEach((classification) => {
                     if (classification.trim() !== ""){
-                        path.push(classification.trim());
+                        path.push(classification.trim().toLowerCase());
                     }
                 })
             }
-            path.push(...[element.strength, element.willpower, element.lore])
-            console.log(path);
+            path.push(...["strength_"+element.strength.toString(), "willPower_"+element.willpower.toString()])
+            if (element.lore){
+                path.push("lore_"+element.lore.toString())
+            }else{
+                path.push("lore_0")
+            }
             addToOntologie( element.name, path);
         }
     });
