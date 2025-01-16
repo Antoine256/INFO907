@@ -32,6 +32,6 @@ export class HomeComponent {
   updateSimilarCard(limit: number | string){
     if (typeof limit === "string")
       limit = parseInt(limit)
-    this.replacementCards = this.cardService.getSimilarCard(this.card, limit)
+    this.replacementCards = this.cardService.getSimilarCard(this.card, limit, ["character"])
   }
 }
