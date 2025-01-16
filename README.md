@@ -1,11 +1,43 @@
-# INFO907
-Ontologie et application pour suggestion de carte Lorcana
+# INFO907 - Ingénierie des connaissances
+## Ontologie et application web pour suggérer des cartes Lorcana
 
+---
+## Contexte
+Lorcana est un jeu de carte à collectionner (TCG - Trading Cards Game). Les TCG les plus connus sont : Magic, Pokémon, Yu-Gi-Oh!
 
-Récupération des données via l'api https://lorcana-api.com/. 
+Les grands principes des TCG sont : 
+- Collectionner toutes les cartes du jeu
+  - Échanges de cartes entre joueurs
+  - Achat de carte via les plateformes spécialisées
+  - Ouvertures de boosters (paquets d'un certain nombre de cartes qui sont aléatoires)
+- Créer son deck pour jouer (exemple avec les règles de Lorcana)
+  - Avoir un minimum de 60 cartes
+  - Ne pas dépasser 2 couleurs différentes
+  - Ne pas avoir plus de 4 fois une même carte (nom complet)
+  - Respecter certain ratio pour que le deck soit jouable
+    - Avoir seulement environ un quart de carte non-encrable
+    - Respecter une bonne courbe de coût
+      - La courbe de coût représente le nombre de cartes que nous avons dans notre deck en fonction de leur coût à jouer
+      ![Exemple courbe de coût](img.png)
 
-Url de l'api : api.lorcana-api.com
-Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
+### Les cartes
+Il existe 5 types de cartes dans Lorcana :
+- Objet
+- Lieu
+- Action
+- Chanson
+- Personnage (le type de carte le plus complet, qui constitue une grande partie du deck en général)
+![Description d'une carte](img_1.png)
+
+### Utilité de notre application
+Imaginons que sur internet, nous avons trouvé **LE** deck parfait, mais il nous manque quelques cartes dans notre collection. 
+Grâce à cette application, nous pouvons trouver des cartes semblables à celle qui nous manque en utilisant les différents filtres. 
+La façon dont nous avons généré notre ontologie favorise le coût et la couleur de la carte, ce qui a pour but de ne pas trop chambouler la courbe de coût initiale.
+
+## Les données
+Nous avons récupéré nos données via l'api https://lorcana-api.com/, que nous avons entièrement téléchargé pour les traiter en local.
+- Url de l'api : api.lorcana-api.com
+- Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
 
 ## Ontologie :
 
@@ -24,7 +56,7 @@ Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
 - Move_Cost : 0-6 
 
 
-### Arbre :
+### Exemple d'arbre :
 
 - Carte Lorcana
   - amber
@@ -62,9 +94,8 @@ Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
 ## Transormation des données :
 
 - On récupère les données sous la forme d'un Json dans ./input.json 
-- ( nous avons enregistré les données d'un appel api dans un fichier json pour pouvoir travailler dessus sans avoir à faire des appels api à chaque fois)
 - On utilise parseData de manière à pouvoir formater les données et on les enregistre dans un fichier json ./output.json
 - On utilise ensuite GenerateOntologie.js qui permet de générer l'ontologie à partir des données formatées. 
 - Le résultat de l'ontologie est visible dans le fichier ./outputOntologie.json.
 - Ce fichier est ensuite utilisé par le site web.
-- Les fonctions utilisées par le site web sont dans le service ./LorcanaCardMatchup/src/app/card.service.ts
+- Les fonctions de traitement de cette ontologie sont dans le service ./LorcanaCardMatchup/src/app/card.service.ts
