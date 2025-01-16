@@ -14,7 +14,7 @@ export class CardService {
     this.cardsDatas = CARDS
   }
 
-  getSimilarCard(card: Card, limit: number, filter: string): Card[]{
+  getSimilarCard(card: Card, limit: number, filter: string = ""): Card[]{
     const cardPath = this.getPath(card.name)
     const cards = this.getXCards(card.name, cardPath, 5, 0 , [], limit, filter)
     return cards.map(similarCard => CARDS.find(c => c.name === similarCard)!)

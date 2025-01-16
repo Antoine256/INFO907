@@ -1,17 +1,27 @@
 <div class="p-3 h-screen w-full overflow-scroll sm:overflow-hidden">
-  <app-search-bar (onCardSelected)="updateCard($event)" class=""/>
-  <div class="pt-3 h-full grid grid-cols-1 sm:grid-cols-3">
+  <div class="flex items-center gap-3">
+    <app-search-bar (onCardSelected)="updateCard($event)" class="w-1/2"/>
+    <div>
+      <h2 class="pb-1">Niveau de ressemblance :</h2>
+      <input type="range" min="0" max="9" value="{{limit}}" class="range" step="1" #input (change)="updateSimilarCard(input.value)" />
+      <div class="flex w-full justify-between px-2 text-xs">
+        <span>Élevée</span>
+        <span>Petite</span>
+      </div>
+    </div>
+  </div>
+  <div class="pt-3 grid grid-cols-1 sm:grid-cols-3">
     <div *ngIf="card" class="w-full flex flex-col items-center">
       <h3 class="p-1 text-lg">Carte selectionnée</h3>
-      <img src="{{card.image}}" class="w-96 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+      <img src="{{card.image}}" class="w-72 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
       <p>{{card.name}}</p>
     </div>
-    <div *ngIf="remplacmentCards" class="w-full flex flex-col items-center col-span-2">
+    <div *ngIf="replacementCards" class="w-full flex flex-col items-center col-span-2">
       <h3 class="p-1 text-lg">Cartes de remplacement</h3>
       <div class="carousel carousel-center space-x-4 ">
-        <div *ngFor="let card of remplacmentCards; let index = index; " id="item-{{index}}" class="carousel-item">
+        <div *ngFor="let card of replacementCards; let index = index; " id="item-{{index}}" class="carousel-item">
           <div>
-            <img src="{{card.image}}" class="w-96 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+            <img src="{{card.image}}" class="w-72 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
             <p class="text-center">{{card.name}}</p>
           </div>
         </div>
