@@ -32,7 +32,8 @@ export class CardService {
 
     result = result.filter(cardN =>{
       let good = false
-      filter.forEach(f => {
+      if (filter.length === 0) good = true
+      else filter.forEach(f => {
         if (this.getPath(cardN).includes(f)){
           good = true
         }
