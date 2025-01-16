@@ -13,34 +13,37 @@ fs.readFile('output.json', 'utf8', (err, data) => {
 
     jsonData.forEach((element) => {
         let path = [];
-        if (element.type === "Character"){
-            path = [element.color.toLowerCase()];
-            if (element.inkable){
-                path.push('inkable');
-            }else{
-                path.push('not inkable');
-            }
-            path.push(...["cost_"+element.cost.toString(), element.type.toLowerCase()]);
-            if (element.abilities){
-                element.abilities.split(',').forEach((ability) => {
-                    if (ability.trim() !== "") path.push(ability.trim().toLowerCase());
-                })
-            }
-            if (element.classifications){
-                element.classifications.split(',').forEach((classification) => {
-                    if (classification.trim() !== ""){
-                        path.push(classification.trim().toLowerCase());
-                    }
-                })
-            }
-            path.push(...["strength_"+element.strength.toString(), "willPower_"+element.willpower.toString()])
-            if (element.lore){
-                path.push("lore_"+element.lore.toString())
-            }else{
-                path.push("lore_0")
-            }
-            addToOntologie( element.name, path);
+        path = [element.color.toLowerCase()];
+        if (element.inkable){
+            path.push('inkable');
+        }else{
+            path.push('not inkable');
         }
+        path.push(...["cost_"+element.cost.toString(), element.type.toLowerCase()]);
+        if (element.abilities){
+            element.abilities.split(',').forEach((ability) => {
+                if (ability.trim() !== "") path.push(ability.trim().toLowerCase());
+            })
+        }
+        if (element.classifications){
+            element.classifications.split(',').forEach((classification) => {
+                if (classification.trim() !== ""){
+                    path.push(classification.trim().toLowerCase());
+                }
+            })
+        }
+        if (element.strength){
+            path.push("strength_"+element.strength.toString())
+        }
+        if (element.willpower){
+            path.push("willPower_"+element.willpower.toString())
+        }
+        if (element.lore){
+            path.push("lore_"+element.lore.toString())
+        }else{
+            path.push("lore_0")
+        }
+        addToOntologie( element.name, path);
     });
 
     writeOntologie();

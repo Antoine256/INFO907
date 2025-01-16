@@ -90,16 +90,41 @@
           "bodyguard": {
             "dreamborn": {
               "hero": {
-                "strength_0": {
-                  "willPower_3": {
-                    "lore_1": [
-                      "Baloo - von Bruinwald XIII"
-                    ]
-                  }
+                "willPower_3": {
+                  "lore_1": [
+                    "Baloo - von Bruinwald XIII"
+                  ]
                 }
               }
             }
           }
+        },
+        "location": {
+          "willPower_8": {
+            "lore_1": [
+              "Tiana's Palace - Jazz Restaurant"
+            ]
+          }
+        },
+        "item": {
+          "support": {
+            "lore_0": [
+              "Dragon Gem"
+            ]
+          },
+          "lore_0": [
+            "Ursula's Shell Necklace"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "Part of Your World"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Sign the Scroll"
+          ]
         }
       },
       "cost_2": {
@@ -162,6 +187,42 @@
               }
             }
           }
+        },
+        "action": {
+          "song": {
+            "lore_0": [
+              "I Won't Give In"
+            ]
+          },
+          "lore_0": [
+            "Rescue Rangers Away!",
+            "Safe and Sound",
+            "Last Stand",
+            "Invited to the Ball",
+            "Bruno's Return"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Scrump",
+            "Sleepy's Flute",
+            "Lantern"
+          ]
+        },
+        "location": {
+          "willPower_7": {
+            "lore_0": [
+              "Sugar Rush Speedway - Finish Line"
+            ],
+            "lore_1": [
+              "Pride Lands - Pride Rock"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "Zero to Hero"
+          ]
         }
       },
       "cost_4": {
@@ -177,12 +238,10 @@
                   }
                 }
               },
-              "strength_0": {
-                "willPower_7": {
-                  "lore_2": [
-                    "Monterey Jack - Good-Hearted Ranger"
-                  ]
-                }
+              "willPower_7": {
+                "lore_2": [
+                  "Monterey Jack - Good-Hearted Ranger"
+                ]
               },
               "fairy": {
                 "strength_1": {
@@ -275,6 +334,11 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Heart of Atlantis"
+          ]
         }
       },
       "cost_5": {
@@ -348,6 +412,12 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "99 Puppies",
+            "Revive"
+          ]
         }
       },
       "cost_8": {
@@ -423,6 +493,11 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Blast From Your Past"
+          ]
         }
       },
       "cost_1": {
@@ -442,12 +517,10 @@
           },
           "storyborn": {
             "ally": {
-              "strength_0": {
-                "willPower_2": {
-                  "lore_1": [
-                    "Pluto - Friendly Pooch"
-                  ]
-                }
+              "willPower_2": {
+                "lore_1": [
+                  "Pluto - Friendly Pooch"
+                ]
               },
               "strength_1": {
                 "willPower_4": {
@@ -466,6 +539,24 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Good Job!"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Naveen's Ukulele",
+            "Pooh Pirate Ship"
+          ]
+        },
+        "location": {
+          "willPower_5": {
+            "lore_0": [
+              "Hundred Acre Island - Pooh's Home"
+            ]
           }
         }
       },
@@ -763,6 +854,14 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Try Everything",
+            "Hakuna Matata",
+            "You Have Forgotten Me",
+            "Lost in the Woods"
+          ]
         }
       },
       "cost_2": {
@@ -998,6 +1097,41 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "The Bare Necessities",
+            "Painting the Roses Red",
+            "Be Our Guest"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Cleansing Rainwater",
+            "Wildcat's Wrench",
+            "Healing Decanter",
+            "Queen's Sensor Core",
+            "Amber Chromicon",
+            "Miracle Candle",
+            "Record Player"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Hold Still"
+          ]
+        },
+        "location": {
+          "willPower_8": {
+            "lore_0": [
+              "Rapunzel's Tower - Secluded Prison"
+            ]
+          },
+          "willPower_6": {
+            "lore_1": [
+              "The Underworld - River Styx"
+            ]
+          }
         }
       },
       "cost_1": {
@@ -1044,12 +1178,10 @@
               }
             },
             "ally": {
-              "strength_0": {
-                "willPower_4": {
-                  "lore_1": [
-                    "Nala - Mischievous Cub"
-                  ]
-                }
+              "willPower_4": {
+                "lore_1": [
+                  "Nala - Mischievous Cub"
+                ]
               },
               "strength_1": {
                 "willPower_2": {
@@ -1115,6 +1247,36 @@
               }
             }
           }
+        },
+        "action": {
+          "support": {
+            "lore_0": [
+              "Boss's Orders"
+            ]
+          },
+          "lore_0": [
+            "Quick Patch",
+            "Control Your Temper!",
+            "Healing Glow",
+            "First Aid"
+          ]
+        },
+        "location": {
+          "willPower_4": {
+            "lore_1": [
+              "Never Land - Mermaid Lagoon"
+            ]
+          },
+          "willPower_6": {
+            "lore_0": [
+              "Atlantica - Concert Hall"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Dinglehopper"
+          ]
         }
       },
       "cost_5": {
@@ -1130,12 +1292,10 @@
                       ]
                     }
                   },
-                  "strength_0": {
-                    "willPower_6": {
-                      "lore_2": [
-                        "Rapunzel - Gifted Artist"
-                      ]
-                    }
+                  "willPower_6": {
+                    "lore_2": [
+                      "Rapunzel - Gifted Artist"
+                    ]
                   }
                 },
                 "strength_4": {
@@ -1420,6 +1580,13 @@
               }
             }
           }
+        },
+        "action - song": {
+          "sing together 7": {
+            "lore_0": [
+              "Look at this Family"
+            ]
+          }
         }
       },
       "cost_3": {
@@ -1617,6 +1784,25 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Heal What Has Been Hurt",
+            "World's Greatest Criminal Mind"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Healing Touch",
+            "Just In Time"
+          ]
+        },
+        "location": {
+          "willPower_8": {
+            "lore_1": [
+              "Pride Lands - Jungle Oasis"
+            ]
+          }
         }
       }
     }
@@ -1702,6 +1888,25 @@
               }
             }
           }
+        },
+        "action": {
+          "song": {
+            "lore_0": [
+              "Heffalumps and Woozles"
+            ]
+          },
+          "lore_0": [
+            "Bounce",
+            "Make the Potion"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "MegaBot",
+            "Galactic Communicator",
+            "Dr. Facilier's Cards",
+            "Hidden Inkcaster"
+          ]
         }
       },
       "cost_3": {
@@ -1889,6 +2094,37 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "You Came Back",
+            "Do It Again!"
+          ]
+        },
+        "location": {
+          "willPower_8": {
+            "lore_1": [
+              "Perilous Maze - Watery Labyrinth"
+            ]
+          },
+          "willPower_6": {
+            "lore_0": [
+              "Owl Island - Secluded Entrance"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Robin's Bow",
+            "Ratigan's Marvelous Trap",
+            "Emerald Chromicon"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "Bibbidi Bobbidi Boo",
+            "Mother Knows Best"
+          ]
         }
       },
       "cost_4": {
@@ -1988,6 +2224,16 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Starlight Vial"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Remember Who You Are"
+          ]
         }
       },
       "cost_1": {
@@ -2018,14 +2264,25 @@
                 ]
               }
             },
-            "strength_0": {
-              "willPower_1": {
-                "lore_2": [
-                  "Cursed Merfolk - Ursula's Handiwork"
-                ]
-              }
+            "willPower_1": {
+              "lore_2": [
+                "Cursed Merfolk - Ursula's Handiwork"
+              ]
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Prepare to Board!",
+            "Mosquito Bite",
+            "Stampede",
+            "Ursula's Trickery"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Transport Pod"
+          ]
         }
       },
       "cost_6": {
@@ -2140,6 +2397,11 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Bend to My Will"
+          ]
         }
       },
       "cost_5": {
@@ -2244,6 +2506,11 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Steal From The Rich"
+          ]
         }
       },
       "cost_9": {
@@ -2279,6 +2546,13 @@
                 }
               }
             }
+          }
+        },
+        "action - song": {
+          "sing together 8": {
+            "lore_0": [
+              "Under the Sea"
+            ]
           }
         }
       }
@@ -2465,6 +2739,39 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Has Set My Heaaaaaaart . . .",
+            "Strike A Good Match",
+            "Sudden Chill"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Airfoil",
+            "Stolen Scimitar",
+            "Signed Contract"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Hypnotic Deduction"
+          ],
+          "ward": {
+            "evasive": {
+              "lore_0": [
+                "Dodge!"
+              ]
+            }
+          }
+        },
+        "location": {
+          "willPower_7": {
+            "lore_0": [
+              "Sherwood Forest - Outlaw Hideaway"
+            ]
+          }
         }
       },
       "cost_4": {
@@ -2491,12 +2798,10 @@
                 }
               },
               "hyena": {
-                "strength_0": {
-                  "willPower_6": {
-                    "lore_1": [
-                      "Shenzi - Hyena Pack Leader"
-                    ]
-                  }
+                "willPower_6": {
+                  "lore_1": [
+                    "Shenzi - Hyena Pack Leader"
+                  ]
                 }
               },
               "strength_4": {
@@ -2639,6 +2944,32 @@
               }
             }
           }
+        },
+        "location": {
+          "ward": {
+            "evasive": {
+              "willPower_6": {
+                "lore_2": [
+                  "Fang - River City"
+                ]
+              }
+            }
+          },
+          "willPower_7": {
+            "lore_1": [
+              "Ursula's Garden - Full of the Unfortunate"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Pack Tactics"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "You're Welcome"
+          ]
         }
       },
       "cost_5": {
@@ -2817,6 +3148,11 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "We Don't Talk About Bruno"
+          ]
         }
       },
       "cost_3": {
@@ -2913,17 +3249,15 @@
                 }
               }
             },
-            "strength_0": {
-              "willPower_5": {
-                "lore_1": [
-                  "Donald Duck - Sleepwalker"
-                ]
-              },
-              "willPower_3": {
-                "lore_2": [
-                  "Cheshire Cat - Not All There"
-                ]
-              }
+            "willPower_5": {
+              "lore_1": [
+                "Donald Duck - Sleepwalker"
+              ]
+            },
+            "willPower_3": {
+              "lore_2": [
+                "Cheshire Cat - Not All There"
+              ]
             },
             "hero": {
               "captain": {
@@ -2938,12 +3272,10 @@
             },
             "king": {
               "deity": {
-                "strength_0": {
-                  "willPower_5": {
-                    "lore_2": [
-                      "Zeus - Mr. Lightning Bolts"
-                    ]
-                  }
+                "willPower_5": {
+                  "lore_2": [
+                    "Zeus - Mr. Lightning Bolts"
+                  ]
                 }
               }
             }
@@ -2997,6 +3329,36 @@
               }
             }
           }
+        },
+        "location": {
+          "willPower_7": {
+            "lore_1": [
+              "Kuzco's Palace - Home of the Emperor"
+            ]
+          },
+          "willPower_6": {
+            "lore_1": [
+              "Tropical Rainforest - Jaguar Lair"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Hypnotize",
+            "Ring The Bell",
+            "Night Howler Rage"
+          ],
+          "reckless": {
+            "lore_0": [
+              "The Beast Is Mine!"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Prince John's Mirror",
+            "Vision Slab"
+          ]
         }
       },
       "cost_1": {
@@ -3022,12 +3384,10 @@
                   ]
                 }
               },
-              "strength_0": {
-                "willPower_4": {
-                  "lore_1": [
-                    "Little John - Camp Cook"
-                  ]
-                }
+              "willPower_4": {
+                "lore_1": [
+                  "Little John - Camp Cook"
+                ]
               },
               "fairy": {
                 "strength_1": {
@@ -3081,6 +3441,34 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "I Will Find My Way"
+          ]
+        },
+        "location": {
+          "willPower_4": {
+            "lore_1": [
+              "De Vil Manor - Cruella's Estate"
+            ]
+          },
+          "willPower_6": {
+            "lore_0": [
+              "Hidden Cove - Tranquil Haven"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Improvise",
+            "Vicious Betrayal"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Obscurosphere"
+          ]
         }
       },
       "cost_6": {
@@ -3329,6 +3717,11 @@
               ]
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Half Hexwell Crown"
+          ]
         }
       },
       "cost_2": {
@@ -3336,12 +3729,10 @@
           "storyborn": {
             "villain": {
               "sorcerer": {
-                "strength_0": {
-                  "willPower_3": {
-                    "lore_1": [
-                      "Madam Mim - Tiny Adversary"
-                    ]
-                  }
+                "willPower_3": {
+                  "lore_1": [
+                    "Madam Mim - Tiny Adversary"
+                  ]
                 }
               }
             },
@@ -3374,6 +3765,30 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Lose the Way",
+            "Gathering Knowledge And Wisdom",
+            "Freeze"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Maleficent's Staff",
+            "Mad Hatter's Teapot",
+            "The Lamp",
+            "Perplexing Signposts",
+            "Magic Mirror",
+            "Ursula's Cauldron"
+          ]
+        },
+        "location": {
+          "willPower_7": {
+            "lore_0": [
+              "Mystical Tree - Mama Odie's Home"
+            ]
+          }
         }
       },
       "cost_3": {
@@ -3394,12 +3809,10 @@
                   ]
                 }
               },
-              "strength_0": {
-                "willPower_3": {
-                  "lore_1": [
-                    "Marshmallow - Terrifying Snowman"
-                  ]
-                }
+              "willPower_3": {
+                "lore_1": [
+                  "Marshmallow - Terrifying Snowman"
+                ]
               }
             },
             "strength_3": {
@@ -3525,6 +3938,36 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Making Magic",
+            "Ursula's Plan"
+          ],
+          "challenger +2": {
+            "lore_0": [
+              "Last-Ditch Effort"
+            ]
+          }
+        },
+        "action - song": {
+          "rush": {
+            "lore_0": [
+              "Gruesome And Grim"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "The Sorcerer's Spellbook"
+          ]
+        },
+        "location": {
+          "willPower_6": {
+            "lore_1": [
+              "Ursula's Lair - Eye of the Storm"
+            ]
+          }
         }
       },
       "cost_5": {
@@ -3625,6 +4068,11 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Seeking the Half Crown"
+          ]
         }
       },
       "cost_1": {
@@ -3642,12 +4090,10 @@
               }
             },
             "ally": {
-              "strength_0": {
-                "willPower_1": {
-                  "lore_1": [
-                    "Diablo - Obedient Raven"
-                  ]
-                }
+              "willPower_1": {
+                "lore_1": [
+                  "Diablo - Obedient Raven"
+                ]
               }
             },
             "strength_1": {
@@ -3670,6 +4116,27 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "song": {
+            "lore_0": [
+              "A Very Merry Unbirthday"
+            ]
+          }
+        },
+        "location": {
+          "willPower_4": {
+            "lore_1": [
+              "Fairy Ship - Royal Vessel"
+            ]
+          }
+        },
+        "item": {
+          "rush": {
+            "lore_0": [
+              "Croquet Mallet"
+            ]
           }
         }
       },
@@ -3788,12 +4255,10 @@
             "challenger +4": {
               "storyborn": {
                 "deity": {
-                  "strength_0": {
-                    "willPower_4": {
-                      "lore_2": [
-                        "Zeus - God of Lightning"
-                      ]
-                    }
+                  "willPower_4": {
+                    "lore_2": [
+                      "Zeus - God of Lightning"
+                    ]
                   }
                 }
               }
@@ -3825,6 +4290,12 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Pixie Dust",
+            "Binding Contract"
+          ]
         }
       },
       "cost_7": {
@@ -3966,6 +4437,15 @@
                 }
               }
             }
+          }
+        }
+      },
+      "cost_10": {
+        "action - song": {
+          "sing together 10": {
+            "lore_0": [
+              "Second Star to the Right"
+            ]
           }
         }
       }
@@ -4115,12 +4595,10 @@
             "dreamborn": {
               "mentor": {
                 "sorcerer": {
-                  "strength_0": {
-                    "willPower_2": {
-                      "lore_1": [
-                        "Rafiki - Mystical Fighter"
-                      ]
-                    }
+                  "willPower_2": {
+                    "lore_1": [
+                      "Rafiki - Mystical Fighter"
+                    ]
                   }
                 }
               }
@@ -4138,6 +4616,36 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Bestow A Gift",
+            "I'm Stuck!",
+            "Befuddle"
+          ],
+          "rush": {
+            "lore_0": [
+              "Swing Into Action"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "It Calls Me",
+            "Reflection"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Retrosphere"
+          ]
+        },
+        "location": {
+          "willPower_6": {
+            "lore_0": [
+              "Casa Madrigal - Casita"
+            ]
           }
         }
       },
@@ -4177,12 +4685,10 @@
                     ]
                   }
                 },
-                "strength_0": {
-                  "willPower_4": {
-                    "lore_2": [
-                      "Maleficent - Vexed Partygoer"
-                    ]
-                  }
+                "willPower_4": {
+                  "lore_2": [
+                    "Maleficent - Vexed Partygoer"
+                  ]
                 }
               }
             },
@@ -4345,6 +4851,42 @@
                 }
               }
             }
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "The Boss Is On A Roll",
+            "We Know The Way",
+            "Friends On The Other Side"
+          ]
+        },
+        "location": {
+          "willPower_7": {
+            "lore_0": [
+              "The Sorcerer's Tower - Wondrous Workspace"
+            ]
+          },
+          "willPower_4": {
+            "lore_1": [
+              "Elsa's Ice Palace - Place of Solitude"
+            ]
+          },
+          "willPower_8": {
+            "lore_1": [
+              "The Library - A Gift for Belle"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Magical Aid"
+          ]
+        },
+        "item": {
+          "rush": {
+            "lore_0": [
+              "White Rabbit's Pocket Watch"
+            ]
           }
         }
       },
@@ -4557,12 +5099,10 @@
             "storyborn": {
               "villain": {
                 "sorcerer": {
-                  "strength_0": {
-                    "willPower_4": {
-                      "lore_1": [
-                        "Dr. Facilier - Charlatan"
-                      ]
-                    }
+                  "willPower_4": {
+                    "lore_1": [
+                      "Dr. Facilier - Charlatan"
+                    ]
                   }
                 }
               }
@@ -4581,6 +5121,37 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "The Sorcerer's Hat",
+            "Amethyst Chromicon",
+            "Mystical Rose",
+            "Rose Lantern",
+            "Triton's Trident"
+          ]
+        },
+        "location": {
+          "willPower_6": {
+            "lore_1": [
+              "Forbidden Mountain - Maleficent's Castle"
+            ]
+          }
+        },
+        "action - song": {
+          "challenger +3": {
+            "lore_0": [
+              "Legend Of The Sword In The Stone"
+            ]
+          },
+          "lore_0": [
+            "Poor Unfortunate Souls"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Hypnotic Strength"
+          ]
         }
       },
       "cost_4": {
@@ -4699,12 +5270,10 @@
                 }
               },
               "sorcerer": {
-                "strength_0": {
-                  "willPower_5": {
-                    "lore_2": [
-                      "Jafar - Keeper of Secrets"
-                    ]
-                  }
+                "willPower_5": {
+                  "lore_2": [
+                    "Jafar - Keeper of Secrets"
+                  ]
                 }
               }
             },
@@ -4802,6 +5371,13 @@
                 }
               }
             }
+          }
+        },
+        "location": {
+          "willPower_7": {
+            "lore_2": [
+              "The Queen's Castle - Mirror Chamber"
+            ]
           }
         }
       },
@@ -4967,6 +5543,11 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Finders Keepers"
+          ]
         }
       },
       "cost_9": {
@@ -5071,6 +5652,11 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Dragon Fire"
+          ]
         }
       },
       "cost_4": {
@@ -5221,6 +5807,31 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "On Your Feet! Now!"
+          ]
+        },
+        "location": {
+          "evasive": {
+            "willPower_8": {
+              "lore_2": [
+                "RLS Legacy - Solar Galleon"
+              ]
+            }
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Dinner Bell",
+            "Sword Of Truth"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "Be King Undisputed"
+          ]
         }
       },
       "cost_2": {
@@ -5334,6 +5945,29 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Lead the Way"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Longboat"
+          ],
+          "evasive": {
+            "lore_0": [
+              "Peter Pan's Dagger"
+            ]
+          }
+        },
+        "location": {
+          "willPower_6": {
+            "lore_0": [
+              "Flotilla - Coconut Armada",
+              "Skull Rock - Isolated Fortress"
+            ]
+          }
         }
       },
       "cost_3": {
@@ -5369,12 +6003,10 @@
               },
               "tigger": {
                 "pirate": {
-                  "strength_0": {
-                    "willPower_4": {
-                      "lore_1": [
-                        "Tigger - In the Crow's Nest"
-                      ]
-                    }
+                  "willPower_4": {
+                    "lore_1": [
+                      "Tigger - In the Crow's Nest"
+                    ]
                   }
                 }
               }
@@ -5503,6 +6135,28 @@
               }
             }
           }
+        },
+        "action": {
+          "song": {
+            "lore_0": [
+              "The Islands I Pulled from the Sea"
+            ]
+          },
+          "lore_0": [
+            "Glimmer VS Glimmer"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "The Most Diabolical Scheme"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "The Sword Released",
+            "Poisoned Apple",
+            "The Plank"
+          ]
         }
       },
       "cost_1": {
@@ -5558,6 +6212,32 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Thievery"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Gold Coin",
+            "Card Soldier's Spear",
+            "Sword In The Stone"
+          ]
+        },
+        "location": {
+          "rush": {
+            "willPower_5": {
+              "lore_0": [
+                "Jolly Roger - Hook's Ship"
+              ]
+            }
+          },
+          "willPower_5": {
+            "lore_0": [
+              "Sugar Rush Speedway - Starting Line"
+            ]
           }
         }
       },
@@ -5623,6 +6303,16 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Energy Blast"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "Be Prepared"
+          ]
         }
       },
       "cost_6": {
@@ -5964,6 +6654,34 @@
               }
             }
           }
+        },
+        "action": {
+          "reckless": {
+            "lore_0": [
+              "Divebomb",
+              "Who's With Me?"
+            ]
+          },
+          "lore_0": [
+            "Brawl"
+          ]
+        },
+        "item": {
+          "evasive": {
+            "lore_0": [
+              "Maui's Fish Hook"
+            ]
+          },
+          "lore_0": [
+            "Sumerian Talisman"
+          ]
+        },
+        "location": {
+          "willPower_5": {
+            "lore_2": [
+              "Agrabah - Marketplace"
+            ]
+          }
         }
       },
       "cost_5": {
@@ -6230,12 +6948,10 @@
               }
             },
             "mentor": {
-              "strength_0": {
-                "willPower_4": {
-                  "lore_1": [
-                    "Fa Zhou - Mulan's Father"
-                  ]
-                }
+              "willPower_4": {
+                "lore_1": [
+                  "Fa Zhou - Mulan's Father"
+                ]
               }
             }
           },
@@ -6301,6 +7017,46 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "I've Got A Dream",
+            "Go The Distance",
+            "Teeth and Ambitions"
+          ],
+          "evasive": {
+            "lore_0": [
+              "You Can Fly!"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Evil Comes Prepared",
+            "Tangle"
+          ],
+          "rush": {
+            "lore_0": [
+              "Cut To The Chase"
+            ]
+          }
+        },
+        "location": {
+          "willPower_7": {
+            "lore_0": [
+              "Ratigan's Party - Seedy Back Room"
+            ]
+          },
+          "willPower_9": {
+            "lore_0": [
+              "Snuggly Duckling - Disreputable Pub"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Medallion Weights"
+          ]
         }
       },
       "cost_7": {
@@ -6351,6 +7107,11 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Don't Let the Frostbite Bite"
+          ]
         }
       },
       "cost_4": {
@@ -6598,9 +7359,29 @@
               }
             }
           }
+        },
+        "action - song": {
+          "sing together 6": {
+            "lore_0": [
+              "A Pirate's Life"
+            ]
+          }
         }
       },
       "cost_1": {
+        "action": {
+          "lore_0": [
+            "Voyage",
+            "What Did You Call Me?",
+            "Fan The Flames",
+            "He's Got A Sword!"
+          ],
+          "rush": {
+            "lore_0": [
+              "Break Free"
+            ]
+          }
+        },
         "character": {
           "reckless": {
             "dreamborn": {
@@ -6659,6 +7440,26 @@
                 }
               }
             }
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Potion of Might",
+            "Ruby Chromicon",
+            "Shield Of Virtue",
+            "Imperial Proclamation"
+          ],
+          "rush": {
+            "lore_0": [
+              "Vitalisphere"
+            ]
+          }
+        },
+        "location": {
+          "willPower_5": {
+            "lore_0": [
+              "Training Grounds - Impossible Pillar"
+            ]
           }
         }
       },
@@ -6834,6 +7635,27 @@
               }
             }
           }
+        },
+        "action": {
+          "song": {
+            "lore_0": [
+              "We Could Be Immortals"
+            ]
+          },
+          "lore_0": [
+            "Falling Down The Rabbit Hole",
+            "Royal Tantrum"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "How Far I'll Go"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Sapphire Chromicon"
+          ]
         }
       },
       "cost_2": {
@@ -6873,12 +7695,10 @@
                     ]
                   }
                 },
-                "strength_0": {
-                  "willPower_2": {
-                    "lore_3": [
-                      "Hiram Flaversham - Intrigued Inventor"
-                    ]
-                  }
+                "willPower_2": {
+                  "lore_3": [
+                    "Hiram Flaversham - Intrigued Inventor"
+                  ]
                 }
               }
             }
@@ -6896,6 +7716,30 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Sail the Azurite Sea"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Baymax's Healthcare Chip",
+            "Microbots",
+            "Scrooge's Top Hat"
+          ]
+        },
+        "location": {
+          "willPower_8": {
+            "lore_0": [
+              "Rescue Rangers Submarine - Mobile Headquarters"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "One Jump Ahead"
+          ]
         }
       },
       "cost_3": {
@@ -6930,12 +7774,10 @@
             },
             "hero": {
               "inventor": {
-                "strength_0": {
-                  "willPower_3": {
-                    "lore_1": [
-                      "Hiro Hamada - Robotics Prodigy"
-                    ]
-                  }
+                "willPower_3": {
+                  "lore_1": [
+                    "Hiro Hamada - Robotics Prodigy"
+                  ]
                 }
               }
             },
@@ -7015,6 +7857,18 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Jumbo Pop",
+            "Maurice's Workshop"
+          ]
+        },
+        "action": {
+          "lore_0": [
+            "Launch",
+            "If It's Not Baroque"
+          ]
         }
       },
       "cost_6": {
@@ -7125,6 +7979,24 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Helping Hand",
+            "Prepare Your Bot"
+          ]
+        },
+        "location": {
+          "willPower_5": {
+            "lore_0": [
+              "Institute of Technology - Prestigious University"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Ice Block"
+          ]
         }
       },
       "cost_5": {
@@ -7172,6 +8044,11 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Merlin's Carpetbag"
+          ]
         }
       },
       "cost_9": {
@@ -7205,6 +8082,11 @@
         }
       },
       "cost_7": {
+        "item": {
+          "lore_0": [
+            "Lucky Dime"
+          ]
+        },
         "character": {
           "storyborn": {
             "mentor": {
@@ -7247,6 +8129,13 @@
               }
             }
           }
+        },
+        "action - song": {
+          "sing together 8": {
+            "lore_0": [
+              "Dig a Little Deeper"
+            ]
+          }
         }
       }
     },
@@ -7256,12 +8145,10 @@
           "storyborn": {
             "hero": {
               "robot": {
-                "strength_0": {
-                  "willPower_4": {
-                    "lore_2": [
-                      "Baymax - Personal Healthcare Companion"
-                    ]
-                  }
+                "willPower_4": {
+                  "lore_2": [
+                    "Baymax - Personal Healthcare Companion"
+                  ]
                 }
               },
               "strength_2": {
@@ -7272,12 +8159,10 @@
                   ]
                 }
               },
-              "strength_0": {
-                "willPower_4": {
-                  "lore_2": [
-                    "Pacha - Emperor's Guide"
-                  ]
-                }
+              "willPower_4": {
+                "lore_2": [
+                  "Pacha - Emperor's Guide"
+                ]
               }
             },
             "ally": {
@@ -7462,6 +8347,33 @@
                 }
               }
             }
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Heart of Te Fiti",
+            "Fang Crossbow",
+            "Fishbone Quill",
+            "Great Stone Dragon"
+          ],
+          "resist +1": {
+            "lore_0": [
+              "Field of Ice"
+            ]
+          }
+        },
+        "location": {
+          "support": {
+            "willPower_9": {
+              "lore_0": [
+                "The Great Illuminary - Radiant Ballroom"
+              ]
+            }
+          },
+          "willPower_8": {
+            "lore_1": [
+              "Winter Camp - Medical Tent"
+            ]
           }
         }
       },
@@ -7649,6 +8561,12 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Friend Like Me",
+            "Let It Go"
+          ]
         }
       },
       "cost_4": {
@@ -7883,6 +8801,35 @@
               }
             }
           }
+        },
+        "item": {
+          "resist +1": {
+            "lore_0": [
+              "Vault Door"
+            ]
+          },
+          "ward": {
+            "lore_0": [
+              "Sardine Can"
+            ]
+          },
+          "lore_0": [
+            "Eye Of The Fates"
+          ]
+        },
+        "location": {
+          "willPower_9": {
+            "lore_2": [
+              "McDuck Manor - Scrooge's Mansion"
+            ]
+          }
+        },
+        "action - song": {
+          "resist +2": {
+            "lore_0": [
+              "Four Dozen Eggs"
+            ]
+          }
         }
       },
       "cost_2": {
@@ -8029,12 +8976,10 @@
               "villain": {
                 "queen": {
                   "sorcerer": {
-                    "strength_0": {
-                      "willPower_4": {
-                        "lore_1": [
-                          "The Queen - Cruelest of All"
-                        ]
-                      }
+                    "willPower_4": {
+                      "lore_1": [
+                        "The Queen - Cruelest of All"
+                      ]
                     }
                   }
                 }
@@ -8069,6 +9014,41 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Distract",
+            "Repair",
+            "Vision of the Future",
+            "Hide Away"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Aurelian Gyrosensor",
+            "Gumbo Pot",
+            "Medal of Heroes",
+            "Basil's Magnifying Glass",
+            "Coconut Basket"
+          ]
+        },
+        "location": {
+          "willPower_5": {
+            "lore_1": [
+              "Motunui - Island Paradise"
+            ]
+          },
+          "willPower_7": {
+            "lore_0": [
+              "Ariel's Grotto - A Secret Place"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "Ever as Before",
+            "Seldom All They Seem"
+          ]
         }
       },
       "cost_7": {
@@ -8231,6 +9211,11 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "Treasures Untold"
+          ]
         }
       },
       "cost_1": {
@@ -8238,12 +9223,10 @@
           "ward": {
             "storyborn": {
               "ally": {
-                "strength_0": {
-                  "willPower_1": {
-                    "lore_1": [
-                      "Kit Cloudkicker - Spunky Bear Cub"
-                    ]
-                  }
+                "willPower_1": {
+                  "lore_1": [
+                    "Kit Cloudkicker - Spunky Bear Cub"
+                  ]
                 }
               }
             }
@@ -8317,6 +9300,42 @@
               }
             }
           }
+        },
+        "location": {
+          "willPower_6": {
+            "lore_0": [
+              "Belle's House - Maurice's Workshop"
+            ]
+          },
+          "willPower_7": {
+            "lore_0": [
+              "Merlin's Cottage"
+            ]
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Nothing To Hide",
+            "All Funned Out",
+            "Develop Your Brain",
+            "Glean"
+          ],
+          "support": {
+            "lore_0": [
+              "Work Together"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Pawpsicle",
+            "Magic Golden Flower"
+          ],
+          "support": {
+            "lore_0": [
+              "Scepter Of Arendelle"
+            ]
+          }
         }
       },
       "cost_8": {
@@ -8376,15 +9395,20 @@
         "character": {
           "storyborn": {
             "pirate": {
-              "strength_0": {
-                "willPower_2": {
-                  "lore_1": [
-                    "Kakamora - Long-Range Specialist"
-                  ]
-                }
+              "willPower_2": {
+                "lore_1": [
+                  "Kakamora - Long-Range Specialist"
+                ]
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Food Fight!",
+            "Fire The Cannons!",
+            "Triton's Decree"
+          ]
         }
       },
       "cost_7": {
@@ -8449,12 +9473,10 @@
         "character": {
           "storyborn": {
             "hero": {
-              "strength_0": {
-                "willPower_4": {
-                  "lore_1": [
-                    "Jim Hawkins - Stubborn Cabin Boy"
-                  ]
-                }
+              "willPower_4": {
+                "lore_1": [
+                  "Jim Hawkins - Stubborn Cabin Boy"
+                ]
               }
             },
             "ally": {
@@ -8523,6 +9545,22 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Twin Fire",
+            "Pick A Fight"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Training Dummy"
+          ],
+          "resist +1": {
+            "lore_0": [
+              "Mouse Armor"
+            ]
           }
         }
       },
@@ -8615,12 +9653,10 @@
           },
           "dreamborn": {
             "hero": {
-              "strength_0": {
-                "willPower_1": {
-                  "lore_1": [
-                    "Mickey Mouse - Trumpeter"
-                  ]
-                }
+              "willPower_1": {
+                "lore_1": [
+                  "Mickey Mouse - Trumpeter"
+                ]
               }
             },
             "villain": {
@@ -8664,6 +9700,32 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Unfortunate Situation",
+            "Avalanche"
+          ]
+        },
+        "item": {
+          "lore_0": [
+            "Sunglasses"
+          ],
+          "resist +2": {
+            "lore_0": [
+              "Plate Armor"
+            ]
+          },
+          "bodyguard": {
+            "lore_0": [
+              "Musketeer Tabard"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "And Then Along Came Zeus"
+          ]
         }
       },
       "cost_6": {
@@ -8696,6 +9758,11 @@
               }
             }
           }
+        },
+        "item": {
+          "lore_0": [
+            "Steel Chromicon"
+          ]
         }
       },
       "cost_5": {
@@ -8822,6 +9889,19 @@
               }
             }
           }
+        },
+        "location": {
+          "willPower_9": {
+            "lore_2": [
+              "Treasure Mountain - Azurite Sea Island"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "A Whole New World",
+            "Grab Your Sword"
+          ]
         }
       },
       "cost_3": {
@@ -8885,6 +9965,46 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Hot Potato",
+            "Ambush!"
+          ],
+          "song": {
+            "lore_0": [
+              "I'm Still Here"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "King's Sensor Core",
+            "Plasma Blaster",
+            "RLS Legacy's Cannon"
+          ],
+          "challenger +1": {
+            "lore_0": [
+              "Captain Hook's Rapier"
+            ]
+          }
+        },
+        "location": {
+          "willPower_7": {
+            "lore_1": [
+              "Galactic Council Chamber - Courtroom"
+            ]
+          }
+        },
+        "action - song": {
+          "lore_0": [
+            "Let The Storm Rage On"
+          ],
+          "resist +2": {
+            "lore_0": [
+              "One Last Hope"
+            ]
+          }
         }
       },
       "cost_8": {
@@ -8928,6 +10048,15 @@
                 }
               }
             }
+          }
+        }
+      },
+      "cost_10": {
+        "action - song": {
+          "sing together 10": {
+            "lore_0": [
+              "The Mob Song"
+            ]
           }
         }
       }
@@ -9118,6 +10247,18 @@
               }
             }
           }
+        },
+        "action - song": {
+          "lore_0": [
+            "I Find 'Em, I Flatten 'Em"
+          ]
+        },
+        "location": {
+          "willPower_8": {
+            "lore_0": [
+              "The Wall - Border Fortress"
+            ]
+          }
         }
       },
       "cost_5": {
@@ -9286,6 +10427,13 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "evasive": {
+            "lore_0": [
+              "Tug-Of-War"
+            ]
           }
         }
       },
@@ -9460,17 +10608,10 @@
                   ]
                 }
               },
-              "strength_0": {
-                "willPower_4": {
-                  "lore_2": [
-                    "Lawrence - Jealous Manservant"
-                  ]
-                },
-                "willPower_5": {
-                  "lore_1": [
-                    "Chi-Fu - Imperial Advisor"
-                  ]
-                }
+              "willPower_4": {
+                "lore_2": [
+                  "Lawrence - Jealous Manservant"
+                ]
               },
               "strength_3": {
                 "willPower_3": {
@@ -9481,6 +10622,11 @@
                     "Ling - Imperial Soldier"
                   ]
                 }
+              },
+              "willPower_5": {
+                "lore_1": [
+                  "Chi-Fu - Imperial Advisor"
+                ]
               },
               "madrigal": {
                 "strength_2": {
@@ -9579,6 +10725,36 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Rise Of The Titans",
+            "Smash"
+          ]
+        },
+        "item": {
+          "resist +2": {
+            "lore_0": [
+              "Gizmosuit"
+            ]
+          },
+          "lore_0": [
+            "Map of Treasure Planet",
+            "Weight Set"
+          ]
+        },
+        "action - song": {
+          "lore_0": [
+            "Strength Of A Raging Fire",
+            "When Will My Life Begin?"
+          ]
+        },
+        "location": {
+          "willPower_7": {
+            "lore_1": [
+              "Bad-Anon - Villain Support Center"
+            ]
           }
         }
       },
@@ -9719,12 +10895,10 @@
             "dreamborn": {
               "villain": {
                 "sorcerer": {
-                  "strength_0": {
-                    "willPower_7": {
-                      "lore_2": [
-                        "Jafar - Tyrannical Hypnotist"
-                      ]
-                    }
+                  "willPower_7": {
+                    "lore_2": [
+                      "Jafar - Tyrannical Hypnotist"
+                    ]
                   }
                 }
               }
@@ -9795,12 +10969,10 @@
               "ally": {
                 "knight": {
                   "seven dwarfs": {
-                    "strength_0": {
-                      "willPower_4": {
-                        "lore_1": [
-                          "Sleepy - Sluggish Knight"
-                        ]
-                      }
+                    "willPower_4": {
+                      "lore_1": [
+                        "Sleepy - Sluggish Knight"
+                      ]
                     }
                   }
                 }
@@ -9931,18 +11103,70 @@
               }
             }
           }
+        },
+        "action": {
+          "lore_0": [
+            "Ba-Boom!",
+            "Break",
+            "Ransack"
+          ],
+          "challenger +2": {
+            "resist +2": {
+              "lore_0": [
+                "Charge!"
+              ]
+            }
+          },
+          "resist +1": {
+            "evasive": {
+              "lore_0": [
+                "Duck For Cover!"
+              ]
+            }
+          }
+        },
+        "location": {
+          "resist +1": {
+            "willPower_5": {
+              "lore_0": [
+                "Maui's Place of Exile - Hidden Island"
+              ]
+            }
+          },
+          "willPower_6": {
+            "lore_1": [
+              "Nottingham - Prince John's Castle",
+              "Seven Dwarfs' Mine"
+            ]
+          },
+          "willPower_7": {
+            "lore_0": [
+              "Thebes - The Big Olive"
+            ]
+          }
+        },
+        "item": {
+          "lore_0": [
+            "Beast's Mirror",
+            "Frying Pan"
+          ],
+          "challenger +2": {
+            "evasive": {
+              "lore_0": [
+                "Imperial Bow"
+              ]
+            }
+          }
         }
       },
       "cost_1": {
         "character": {
           "dreamborn": {
             "hero": {
-              "strength_0": {
-                "willPower_3": {
-                  "lore_1": [
-                    "Minnie Mouse - Funky Spelunker"
-                  ]
-                }
+              "willPower_3": {
+                "lore_1": [
+                  "Minnie Mouse - Funky Spelunker"
+                ]
               }
             }
           },
@@ -10044,6 +11268,35 @@
                 }
               }
             }
+          }
+        },
+        "action": {
+          "lore_0": [
+            "Olympus Would Be That Way"
+          ]
+        },
+        "location": {
+          "willPower_3": {
+            "lore_1": [
+              "The Bayou - Mysterious Swamp"
+            ]
+          }
+        },
+        "item": {
+          "challenger +3": {
+            "lore_0": [
+              "Last Cannon"
+            ]
+          },
+          "resist +1": {
+            "lore_0": [
+              "Shield of Arendelle"
+            ]
+          },
+          "bodyguard": {
+            "lore_0": [
+              "Fortisphere"
+            ]
           }
         }
       },
