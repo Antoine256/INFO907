@@ -57,3 +57,14 @@ Url pour get toutes les cartes : api.lorcana-api.com/bulk/cards
   - ruby
   - sapphire
   - steel
+
+
+## Transormation des données :
+
+- On récupère les données sous la forme d'un Json dans ./input.json 
+- ( nous avons enregistré les données d'un appel api dans un fichier json pour pouvoir travailler dessus sans avoir à faire des appels api à chaque fois)
+- On utilise parseData de manière à pouvoir formater les données et on les enregistre dans un fichier json ./output.json
+- On utilise ensuite GenerateOntologie.js qui permet de générer l'ontologie à partir des données formatées. 
+- Le résultat de l'ontologie est visible dans le fichier ./outputOntologie.json.
+- Ce fichier est ensuite utilisé par le site web.
+- Les fonctions utilisées par le site web sont dans le service ./LorcanaCardMatchup/src/app/card.service.ts
