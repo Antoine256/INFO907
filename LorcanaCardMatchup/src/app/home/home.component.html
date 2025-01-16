@@ -3,29 +3,43 @@
     <app-search-bar (onCardSelected)="updateCard($event)" class="w-1/2"/>
     <div>
       <h2 class="pb-1">Niveau de ressemblance :</h2>
-      <input type="range" min="0" max="9" value="{{limit}}" class="range" step="1" #input (change)="updateSimilarCard(input.value)" />
+      <input type="range" min="0" max="9" value="{{limit}}" class="range" step="1" #input (change)="updateLimit(input.value)" />
       <div class="flex w-full justify-between px-2 text-xs">
         <span>Élevée</span>
         <span>Petite</span>
       </div>
     </div>
+    <div>
+      <h2 class="pb-1">Types de cartes :</h2>
+      <div class="join join-vertical lg:join-horizontal">
+        <button (click)="updateFilter(TYPES.PERSONNAGE.value)" class="btn join-item {{isSelected(TYPES.PERSONNAGE.value) ? 'btn-primary' : 'btn-neutral'}}">{{TYPES.PERSONNAGE.label}}</button>
+        <button (click)="updateFilter(TYPES.OBJET.value)" class="btn join-item {{isSelected(TYPES.OBJET.value) ? 'btn-primary' : 'btn-neutral'}}">{{TYPES.OBJET.label}}</button>
+        <button (click)="updateFilter(TYPES.LIEU.value)" class="btn join-item {{isSelected(TYPES.LIEU.value) ? 'btn-primary' : 'btn-neutral'}}">{{TYPES.LIEU.label}}</button>
+        <button (click)="updateFilter(TYPES.ACTION.value)" class="btn join-item {{isSelected(TYPES.ACTION.value) ? 'btn-primary' : 'btn-neutral'}}">{{TYPES.ACTION.label}}</button>
+        <button (click)="updateFilter(TYPES.CHANSON.value)" class="btn join-item {{isSelected(TYPES.CHANSON.value) ? 'btn-primary' : 'btn-neutral'}}">{{TYPES.CHANSON.label}}</button>
+      </div>
+    </div>
+    
   </div>
   <div class="pt-3 grid grid-cols-1 sm:grid-cols-3">
     <div *ngIf="card" class="w-full flex flex-col items-center">
       <h3 class="p-1 text-lg">Carte selectionnée</h3>
-      <img src="{{card.image}}" class="w-72 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+      <img src="{{card.image}}" class="w-80 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
       <p>{{card.name}}</p>
     </div>
-    <div *ngIf="replacementCards" class="w-full flex flex-col items-center col-span-2">
+    <div *ngIf="replacementCards && replacementCards.length > 0" class="w-full flex flex-col items-center col-span-2">
       <h3 class="p-1 text-lg">Cartes de remplacement</h3>
       <div class="carousel carousel-center space-x-4 ">
         <div *ngFor="let card of replacementCards; let index = index; " id="item-{{index}}" class="carousel-item">
           <div>
-            <img src="{{card.image}}" class="w-72 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
+            <img src="{{card.image}}" class="w-80 rounded-3xl {{card.type === 'Location' ? 'hover:rotate-90 delay-100' : ''}}" alt="{{card.name}}">
             <p class="text-center">{{card.name}}</p>
           </div>
         </div>
       </div>
+    </div>
+    <div *ngIf="card && (!replacementCards || replacementCards.length === 0)" class="w-full flex flex-col items-center col-span-2">
+      <h3 class="p-1 text-lg my-auto">Aucune carte trouvée, essayez d'ajuster les filtres</h3>
     </div>
   </div>
 </div>
