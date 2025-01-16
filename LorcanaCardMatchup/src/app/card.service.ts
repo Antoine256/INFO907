@@ -14,37 +14,40 @@ export class CardService {
     this.cardsDatas = CARDS
   }
 
-  getSimilarCard(card: Card): Card[]{
+  getSimilarCard(card: Card, limit: number, filter: string): Card[]{
     const cardPath = this.getPath(card.name)
-    const cards = this.getXCards(card.name, cardPath, 5, 0 , [])
+    const cards = this.getXCards(card.name, cardPath, 5, 0 , [], limit, filter)
     return cards.map(similarCard => CARDS.find(c => c.name === similarCard)!)
   }
 
   //récupère les 5 cartes les plus similaires à notre carte.
-  getXCards(cardName: string, cardPath: string[], x: number, deep: number = 0, savedResult: string[]): string[] {
+  getXCards(cardName: string, cardPath: string[], x: number, deep: number = 0, savedResult: string[], limit: number, filter: string): string[] {
     let result: any[] = [];
     let level: any = this.cardsOntologie
 
     for(let i = 0; i < cardPath.length - deep; i++){
       level = level[cardPath[i]]
     }
-    result = this.getCards(level)
+    result = this.getCards(level, filter)
     result = result.filter(card => card !== cardName)
 
     savedResult = savedResult.concat(result).filter((value, index, self) => index === self.findIndex((t) => (t === value)))
 
     if(savedResult.length >= x)
       return savedResult.slice(0, 5)
-    return this.getXCards(cardName, cardPath, x, deep + 1, savedResult)
+    if (deep +1 === limit){
+      return savedResult
+    }
+    return this.getXCards(cardName, cardPath, x, deep + 1, savedResult, limit, filter)
   }
 
-  getCards(level: any): string[]{
+  getCards(level: any, filter: string): string[]{
     if (Array.isArray(level)){
       return level;
     }
     let thisRes:string[] = [];
     for (let i=0; i < Object.keys(level).length; i++){
-      thisRes.push(...this.getCards(level[Object.keys(level)[i]]));
+      thisRes.push(...this.getCards(level[Object.keys(level)[i]], filter));
     }
     return thisRes;
   }
