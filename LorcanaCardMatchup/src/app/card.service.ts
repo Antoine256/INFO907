@@ -35,7 +35,7 @@ export class CardService {
 
     if(savedResult.length >= x)
       return savedResult.slice(0, 5)
-    if (deep +1 === limit){
+    if (deep +1 >= limit){
       return savedResult
     }
     return this.getXCards(cardName, cardPath, x, deep + 1, savedResult, limit, filter)
