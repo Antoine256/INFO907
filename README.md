@@ -2,8 +2,21 @@
 ## Ontologie et application web pour suggérer des cartes Lorcana
 
 ### Auteurs
-- [BEAUDEAU Elyne]()
-- [DUPASQUIER Antoine]()
+- **BEAUDEAU Elyne**
+- **DUPASQUIER Antoine**
+
+### Lancer l'application
+```shell
+cd .\LorcanaCardMatchup\
+```
+```shell
+npm i
+```
+```shell
+ng serve
+```
+
+L'application sera accessible sur [localhost:4200](http://localhost:4200/).
 
 ---
 ## Contexte
@@ -112,3 +125,15 @@ Nous avons récupéré nos données via l'api https://lorcana-api.com/, que nous
 Le curseur sur le site web permet de choisir une limite de profondeur lors de la récupération des 5 cartes les plus proches.
 Les catégories permettent de filtrer les cartes en fonction de leur type.
 
+## Exemple de résultats
+### Recherche d'un personnage sans filtre
+![Exemple 1](img_2.png)
+
+### Recherche d'un lieu avec un faible taux de resemblance 
+![Exemple 2](img_3.png)
+
+### Recherche d'un lieu avec un haut taux de resemblance
+![Exemple 3](img_4.png)
+
+### Recherche d'un lieu avec uniquement d'autres lieux en résultats (taux de resemblance moyen)
+![Exemple 4](img_5.png)
